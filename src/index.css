@@ -8,8 +8,9 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Medical Color Palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 20% 15%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -17,17 +18,36 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Medical Blue - Primary brand color */
+    --primary: 217 100% 40%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Medical Green - Secondary healing color */
+    --secondary: 162 100% 36%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Medical accent colors */
+    --medical-blue-light: 217 100% 95%;
+    --medical-green-light: 162 100% 95%;
+    --medical-success: 142 76% 36%;
+    --medical-warning: 38 92% 50%;
+    --medical-error: 0 84% 60%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 217 25% 97%;
+    --muted-foreground: 210 10% 60%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 162 100% 36%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Medical gradients */
+    --gradient-medical: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--medical-blue-light)), hsl(var(--medical-green-light)));
+    
+    /* Medical shadows */
+    --shadow-medical: 0 4px 20px hsl(var(--primary) / 0.1);
+    --shadow-card: 0 2px 10px hsl(var(--primary) / 0.05);
+    --shadow-floating: 0 8px 30px hsl(var(--primary) / 0.12);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -56,7 +76,7 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 210 15% 8%;
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
@@ -65,11 +85,14 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 162 100% 40%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --medical-blue-light: 217 40% 15%;
+    --medical-green-light: 162 40% 15%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
